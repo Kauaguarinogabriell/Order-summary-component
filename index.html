@@ -12,26 +12,58 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-image: url(pattern-background-desktop.svg);
+      background-color:hsl(225, 100%, 94%);
+      max-width: 1440px;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+    .container{
+      display:block;
+      background-color:hsl(225, 100%, 98%);
+      width: 30%;
+      margin: 0 auto;
+      margin-top: 4%;
+      border-radius: 20px;
+      text-align: center;
+      padding-bottom: 10%;
+    }
+    .heroimg{
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px ;
+    }
+    .maintitle{
+      font-weight: 600;
+      font-size: 190%;
+    }
+    .paragraph{
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
+  <main class="container">
+    <div>
+      <picture>
+        <img class="heroimg" src="illustration-hero.svg" width="100%">
+      </picture>
+      <h1 class="maintitle">Order Summary</h1>
 
-  Order Summary
+      <p class="paragraph">You can now listen to millions of<br> songs, audiobooks, and podcasts on<br> any 
+      device anywhere you like!</p>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <p>Annual Plan</p>
+      <p>$59.99/year</p>
 
-  Annual Plan
-  $59.99/year
+      <a>Change</a>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
+      <a>Proceed to Payment</a>
+      <a>Cancel Order</a>
+    </div> 
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Kauã Guarino</a>.
   </div>
 </body>
 </html>
