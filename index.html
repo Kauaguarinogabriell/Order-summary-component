@@ -20,24 +20,85 @@
     }
     .container{
       display:block;
-      background-color:hsl(225, 100%, 98%);
-      width: 30%;
+      background-color:snow;
+      width: 27%;
       margin: 0 auto;
       margin-top: 4%;
       border-radius: 20px;
       text-align: center;
-      padding-bottom: 10%;
+      padding-bottom: 11%;
     }
     .heroimg{
       border-top-left-radius: 20px;
       border-top-right-radius: 20px ;
     }
     .maintitle{
-      font-weight: 600;
-      font-size: 190%;
+      font-weight: 900;
+      font-size: 150%;
     }
     .paragraph{
       font-size: 16px;
+      line-height: 120%;
+      color: grey;
+      padding-bottom: 5%;
+    }
+    .cardplan{
+      background-color: hsl(225, 100%, 97%);
+      max-width: 90%;
+      margin: 0 auto;
+      border-radius: 13px;
+      padding-bottom: 20%;
+    }
+    .textcard{
+      line-height: 130%;
+      float: left;
+      margin-left: 5%;
+    }
+    .texttop{
+      font-weight: 900;
+    }
+    .price{
+      color:grey;
+    }
+    .iconmusic{
+      float: left;
+      margin-top: 4%;
+      margin-left: 6%;
+      width: 13%;
+    }
+    .link{
+      float:right;
+      font-size: 95%;
+      margin-top: 8%;
+      margin-right: 8%;
+      font-weight: 600;
+    }
+    .link:hover{
+      transition: 3ms;
+      text-decoration: none;
+      color: hsl(245, 75%, 65%);
+    }
+    .paymentbutton{
+      background-color:hsl(245, 75%, 52%);
+      border-radius: 10px;
+      padding: 4% 24% 4% 24%;
+      float: right;
+      margin-right: 5%;
+      margin-top: 5%;
+      color:hsl(225, 100%, 94%);
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0px 5px 20px 5px hsl(225, 100%, 80%);
+
+    }
+    .cancelbutton{
+     float: left;
+     margin-left: 37%;
+     margin-top: 7%;
+     font-size: 95%;
+     text-decoration: none;
+     color: grey;
+     font-weight: 600;
     }
   </style>
 </head>
@@ -48,17 +109,22 @@
         <img class="heroimg" src="illustration-hero.svg" width="100%">
       </picture>
       <h1 class="maintitle">Order Summary</h1>
+        <p class="paragraph">You can now listen to millions of<br> songs, audiobooks, and podcasts on<br> any 
+        device anywhere you like!</p>
 
-      <p class="paragraph">You can now listen to millions of<br> songs, audiobooks, and podcasts on<br> any 
-      device anywhere you like!</p>
+      <div class="cardplan">
+        <picture>
+          <img class="iconmusic" src="icon-music.svg">
+        </picture>
+          <p class="textcard"><span class="texttop"> Annual Plan</span><br><span class="price">$59.99/year</span></p>
+        <a class="link" href="#">Change</a>
+      </div>
 
-      <p>Annual Plan</p>
-      <p>$59.99/year</p>
-
-      <a>Change</a>
-
-      <a>Proceed to Payment</a>
-      <a>Cancel Order</a>
+      <a class="paymentbutton" href="#">Proceed to Payment</a>
+      
+      <footer>
+        <a class="cancelbutton" href="#">Cancel Order</a>
+      </footer>
     </div> 
   </main>
   <div class="attribution">
