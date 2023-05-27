@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+html, body{
+    height: 100%;
+    font-size: 15px;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    background: url(pattern-background-desktop.svg) no-repeat;
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background: #ffffff;
+    gap: 15px;
+    border-radius: 15px;
+}
+
+.hero-img{
+    width: 400px;
+    margin-bottom: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container h1{
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.description{
+    margin: 0;
+    max-width: 30ch;
+    text-align: center;
+}
+
+.pack{
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.pack h2, p{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.pack a{
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+.left{
+    display: flex;
+    place-items: center;
+    gap: 15px;
+}
+
+.payment-button{
+    width: 75%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    background: hsl(245, 75%, 52%);
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.cancel-button{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    margin:20px 30px 30px 30px;
+}
+
+.payment-button:hover{
+    background: hsl(245, 75%, 65%);
+}
+.cancel-button:hover{
+    color: hsl(223, 47%, 23%);
+}
+.pack a:hover{
+    color: hsl(245, 75%, 65%);
+}
